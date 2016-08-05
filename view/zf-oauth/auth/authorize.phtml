@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2><?php echo $this->translate('Authorization request') ?> <small><?php echo $this->translate('Would you like to authorize the client') ?></small> </h2>
+            <form method="post">
+                <label>Do You Authorize <?php echo $this->escapeHtml($this->clientId) ?>?</label><br />
+                <input type="submit" name="authorized" value="yes">
+                <input type="submit" name="authorized" value="no">
+            </form>
+        </div>
+    </div>
+</div>
